@@ -1,0 +1,130 @@
+input[type=number] {
+    appearance: textfield;
+    
+  }
+
+  /*add section */
+  .AddForm {
+    display: none;
+  }
+
+  /*search section */
+  .SearchForm {
+    display: none;
+  }
+
+  /*edit section */
+  .EditForm {
+    display: none;
+  }
+
+  /*delete section */
+  .DeleteForm {
+    display: none;
+  }
+
+  .ControlButtons button{
+    padding: 20px;
+    margin: 5px;
+    font-size: large;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .AddForm label {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .AddForm button {
+    padding: 20px;
+    margin: 5px;
+    font-size: large;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .AddForm input{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 300px;
+  }
+
+  .SearchForm label {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .SearchForm button {
+    padding: 20px;
+    margin: 5px;
+    font-size: large;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .SearchForm input{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 300px;
+  }
+
+  .EditForm label {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .EditForm button {
+    padding: 20px;
+    margin: 5px;
+    font-size: large;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .EditForm input{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 300px;
+  }
+
+  .DeleteForm label {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .DeleteForm button {
+    padding: 20px;
+    margin: 5px;
+    font-size: large;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .DeleteForm input{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 300px;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+  }
+  th {
+    background-color: #acacb8;
+  }
+  td {
+    text-align: center;
+  }

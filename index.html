@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>App</title>
+</head>
+<body>
+    <div class="ControlButtons">
+    <button onclick="AddUserSectionActive()">Add user</button>
+    <button onclick="SearchUserSectionActive()">Search user</button>
+    <button onclick="EditUserSectionActive()">Edit user</button>
+    <button onclick="DeleteUserSectionActive()">Delete user</button>
+    <button onclick="ShowAllUsersActive()">All user</button>
+    </div>
+
+    <div class="AddForm" id="AddFormId">
+        <br>
+        <label for="AddFormId">Enter your info as new user</label>
+        <br><br>
+        <input type="text" placeholder="your name..." id="AddUserName">
+        <br><br>
+        <input type="email" placeholder="your email..." id="AddUserEmail">
+        <br><br>
+        <input type="number" placeholder="enter your phone number" id="AddUserNumber">
+        <br><br>
+        <button onclick="AddUser()">Add</button>
+        <br><br>
+        <p id="AddUserStatue"></p>
+    </div>
+    <div class="SearchForm" id="SearchFormId">
+        <br>
+        <label for="SearchFormId">Enter your fullname</label>
+        <br><br>
+        <input type="text" placeholder="fullname here..." id="SearchUserName">
+        <br><br>
+        <button onclick="SearchUser()">search</button>
+        <br><br>
+        <div id="SearchUserErrorInfo">
+            <p id="SearchUserErrorInfoP"></p>
+        </div>
+        <div id="SearchUserSuccessInfo">
+            <p id="SearchUserInfoName"></p>
+            <p id="SearchUserInfoEmail"></p>
+            <p id="SearchUserInfoNumber"></p>
+        </div>
+        
+    </div>
+    <div class="EditForm" id="EditFormId">
+        <br>
+        <label for="EditFormId">Edit your info</label>
+        <br><br>
+        <input type="text" name="" id="SearchForEditUserName" placeholder="Type your name...">
+        <button onclick="SearchEditUser()">search</button>
+        <br>
+        <hr>
+        <br>
+        <input type="text" placeholder="Edit your name..." id="EditUserName">
+        <br><br>
+        <input type="text" placeholder="Edit you email..." id="EditUserEmail">
+        <br><br>
+        <input type="text" placeholder="Edit your phone number..." id="EditUserNumber">
+        <br><br>
+        <button onclick="EditUser()">Edit user</button>
+        <br><br>
+        <div id="SearchEditUserErrorInfo">
+            <p id="SearchEditUserErrorInfoP"></p>
+        </div>
+        <div id="SearchEditUserSuccessInfo">
+            <p id="SearchEditUserInfo"></p>
+            
+        </div>
+    </div>
+    <div class="DeleteForm" id="DeleteFormId">
+        <br>
+        <label for="DeleteFormId">Delete user id</label>
+        <br><br>
+        <hr>
+        <br>
+        <input type="text" placeholder="user name..." id="DeleteUserName">
+        <br><br>
+        <button onclick="DeleteUser()">Delete user!</button>
+        <br><br>
+        <div id="DeleteUserErrorInfo">
+            <p id="DeleteUserErrorInfoP"></p>
+        </div>
+        <div id="DeleteUserSuccessInfo">
+            <p id="DeleteUSerSuccessInfoP"></p>
+        </div>
+    </div>
+    <div class="ShowAllUsers" id="ShowAllUsersId">
+        <label for="ShowAllUsersId" >Users list</label>
+        <br><br>
+        <button onclick="ShowAllUsers()">show</button>
+        <br><br>
+        <div class="ShowAllUsersTable" id="ShowAllUsersTableId">
+            <!-- table of all users goes here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
